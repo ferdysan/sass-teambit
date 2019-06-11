@@ -1,1 +1,57 @@
 // parte centrale del documento
+
+#main{
+  background-color: $bg_color_main;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: $margin_top_bottom;
+
+
+  .title_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:$menu_color;
+    margin: 80px 40px;
+  }
+
+  .three_col{
+    display: flex;
+    justify-content: center;
+    margin:$margin_top_bottom;
+
+
+    .cards{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      flex-direction: column;
+      width: calc(100% /3);
+
+    }
+
+    img{
+      margin-bottom: $margin_top_bottom;
+      max-width: 180px;
+      height: auto;
+
+  }
+
+
+
+}
+
+.rabbit{
+  @include display_flex_center;
+  margin: $margin_top_bottom;
+
+  img{
+    max-width: 350px;
+  }
+}
+
+
+
+}

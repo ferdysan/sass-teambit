@@ -2,9 +2,13 @@ $menu_color : #58402c;
 $menu_padding: 10px 15px;
 $menu_color_hover: #30488f;
 $header_height: 80px;
-$icon-margin:10px;
+$icon-margin: 10px;
+$width-default: 1200px;
+$margin_top_bottom: 40px 0px 40px 0;
 
-@mixin stile_button_header(){
+$bg_color_main: #FFE7D2;
+
+@mixin stile_button_header{
   color: $menu_color_hover !important;
   border: 1px solid $menu_color_hover;
   border-radius: 5px;
@@ -26,4 +30,12 @@ $icon-margin:10px;
 @mixin size($width, $height) {
   width: $width;
   height: $height;
+}
+
+
+// display flex allinea al centro
+@mixin display_flex_center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

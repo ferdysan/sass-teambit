@@ -6,6 +6,7 @@
   align-items: center;
   border-bottom: 1px solid $menu_color;
   height: $header_height;
+
 }
 
 
@@ -60,7 +61,7 @@
 
   .slider_text{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     color:$menu_color;
 
     h1{
@@ -70,6 +71,11 @@
 
     p{
       font-size: 20px;
+      margin: $margin_top_bottom;
+    }
+
+    .link_mail{
+      margin: $margin_top_bottom;
     }
   }
 
@@ -78,9 +84,9 @@
     i{
       margin-right: $icon-margin;
     }
+    &:hover{
+      background-color: darken($menu_color_hover, 15);
+    }
   }
-
-
-
 
 }
