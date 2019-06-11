@@ -74,9 +74,7 @@
   }
 
   .button_slider a{
-    @include stile_button_header;
-    padding: $menu_padding;
-    text-decoration: none;
+    @include stile_button_gen($menu_padding, 5px, white, 5px ,$menu_color_hover );
     i{
       margin-right: $icon-margin;
     }

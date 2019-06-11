@@ -71,12 +71,13 @@
 }
 
 .slider_menu .button_slider a {
-  color: #30488f !important;
-  border: 1px solid #30488f;
+  color: white !important;
+  border: 1px solid white;
   border-radius: 5px;
-  margin-left: 10px;
+  margin-left: 5px;
   padding: 10px 15px;
   text-decoration: none;
+  background-color: #30488f;
 }
 
 .slider_menu .button_slider a i {

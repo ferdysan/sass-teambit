@@ -4,9 +4,26 @@ $menu_color_hover: #30488f;
 $header_height: 80px;
 $icon-margin:10px;
 
-@mixin stile_button_header{
+@mixin stile_button_header(){
   color: $menu_color_hover !important;
   border: 1px solid $menu_color_hover;
   border-radius: 5px;
   margin-left: 10px;
+}
+
+// questo mixin mi genera i bottoni accettando alcuni parametri
+@mixin stile_button_gen($padding, $margin, $color, $border-radius, $bg_color){
+  color: $color !important;
+  border: 1px solid $color;
+  border-radius: $border-radius;
+  margin-left: $margin;
+  padding: $padding;
+  text-decoration: none;
+  background-color: $bg_color;
+}
+
+// questo mixin accetta due parametri per regolare altezza e larghezza di un elemento
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
 }
