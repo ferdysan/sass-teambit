@@ -1,7 +1,9 @@
 @import url(/path/to/reset-css/reset.css);#header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #58402c;
+  height: 80px;
 }
 
 .main_menu ul li {
@@ -11,7 +13,7 @@
 .main_menu ul li a {
   color: #58402c;
   text-decoration: none;
-  padding: 20px 5px;
+  padding: 10px 15px;
   font-weight: bold;
 }
 
@@ -19,9 +21,59 @@
   color: #30488f;
 }
 
+.main_menu ul li i {
+  padding: 10px 15px;
+}
+
+.main_menu ul li .dropdown {
+  display: none;
+}
+
+.main_menu ul li .dropdown ul li {
+  display: block;
+}
+
+.button_header {
+  color: #30488f !important;
+  border: 1px solid #30488f;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.button_header:hover {
+  background-color: #30488f;
+  color: white !important;
+}
+
+.slider_menu {
+  display: flex;
+}
+
+.slider_menu .slider_img img {
+  max-width: 570px;
+}
+
+.slider_menu .slider_text {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-flex {
+  width: 1200px;
+}
+
 body {
   width: 100vw;
   height: 100vh;
-  font-family: "HarmoniaSansProCyr-SemiBd";
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 

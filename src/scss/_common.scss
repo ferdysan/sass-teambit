@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+
+.container-flex{
+  width: 1200px;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,8 +1,11 @@
 #header{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid $menu_color;
+  height: $header_height;
 }
+
 
 .main_menu ul li{
   display: inline-block;
@@ -18,5 +21,38 @@
     }
   }
 
+  i{
+    padding: $menu_padding;
+  }
 
+  .dropdown{
+    display: none;
+    ul li{
+      display: block;
+    }
+  }
+
+}
+
+.button_header{
+  @include stile_button_header;
+
+  &:hover{
+    background-color: $menu_color_hover;
+    color: white !important;
+  }
+}
+
+.slider_menu{
+  display: flex;
+  .slider_img img{
+    max-width: 570px;
+  }
+
+  .slider_text{
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
