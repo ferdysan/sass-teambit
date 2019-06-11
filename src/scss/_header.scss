@@ -1,3 +1,5 @@
+// codice generico dell'header
+
 #header{
   display: flex;
   justify-content: space-between;
@@ -6,6 +8,8 @@
   height: $header_height;
 }
 
+
+// codice relativo al main menu
 
 .main_menu ul li{
   display: inline-block;
@@ -43,16 +47,42 @@
   }
 }
 
+// codice relativo allo slider
+
 .slider_menu{
   display: flex;
+  justify-content: space-between;
+  margin:100px 0 100px 0;
+
   .slider_img img{
     max-width: 570px;
   }
 
   .slider_text{
-    padding: 40px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    color:$menu_color;
+
+    h1{
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    p{
+      font-size: 20px;
+    }
   }
+
+  .button_slider a{
+    @include stile_button_header;
+    padding: $menu_padding;
+    text-decoration: none;
+    i{
+      margin-right: $icon-margin;
+    }
+  }
+
+
+
+
 }

@@ -2,6 +2,7 @@ $menu_color : #58402c;
 $menu_padding: 10px 15px;
 $menu_color_hover: #30488f;
 $header_height: 80px;
+$icon-margin:10px;
 
 @mixin stile_button_header{
   color: $menu_color_hover !important;
