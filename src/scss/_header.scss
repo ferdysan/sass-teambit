@@ -1,0 +1,22 @@
+#header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main_menu ul li{
+  display: inline-block;
+
+  a{
+    color: $menu_color;
+    text-decoration: none;
+    padding: $menu_padding;
+    font-weight: bold;
+
+    &:hover{
+      color:$menu_color_hover;
+    }
+  }
+
+
+}

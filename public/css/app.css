@@ -1,0 +1,27 @@
+@import url(/path/to/reset-css/reset.css);#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main_menu ul li {
+  display: inline-block;
+}
+
+.main_menu ul li a {
+  color: #58402c;
+  text-decoration: none;
+  padding: 20px 5px;
+  font-weight: bold;
+}
+
+.main_menu ul li a:hover {
+  color: #30488f;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "HarmoniaSansProCyr-SemiBd";
+}
+

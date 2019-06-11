@@ -1,0 +1,12 @@
+/*posso usare delle variabili per usarle per riciclare i valori*/
+$esempio_variabile: 5px;
+
+/*ad esempio*/
+body{
+  background-color: $esempio_variabile;
+}
+
+/*posso usare una variabile anche per salvarmi il nome di un selettore*/
+
+$elemento: 'button';
+$elemento: 'div.prova';
